@@ -23,7 +23,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: "16.x"
-
+    - name: 安装 Next.js 和 react
+      run: |
+        npm install next react react-dom
     - name: 安装依赖
       if: steps.cache.outputs.cache-hit != 'true'
       run: |
