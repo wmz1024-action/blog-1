@@ -3,7 +3,6 @@ import { MDXRemote } from "next-mdx-remote";
 import React, { ReactNode } from "react";
 import { getAndSerializePost, getPosts, PostData } from "@/lib/get-posts";
 import Tag from "@/components/Tag";
-import { MDXComponents } from "@/components/MDXComponents";
 import Layout from "@/components/layouts";
 import Link from "next/link";
 import Footer from "@/components/Footer";
