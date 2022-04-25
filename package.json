@@ -34,7 +34,7 @@
     "next": "^12.1.5",
     "next-mdx-remote": "latest",
     "next-sitemap": "latest",
-    "react": "latest",
+    "react": "^17.0.0",
     "react-dom": "latest",
     "reading-time": "latest",
     "rehype": "latest",
