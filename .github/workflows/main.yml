@@ -34,7 +34,7 @@ jobs:
     - name: 生成
       run: |
         npm run build
-        next export
+        npm run export
 
 
     - name: Deploy
