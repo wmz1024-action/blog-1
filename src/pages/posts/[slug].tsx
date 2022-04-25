@@ -22,7 +22,6 @@ const ArticlePage = ({ mdxSource, frontMatter }: PostData): ReactNode => {
           <a className="meta-back">Back</a>
         </Link>
       </div>
-      <MDXRemote components={MDXComponents} {...mdxSource} />
       <Footer />
     </Layout>
   );
