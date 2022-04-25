@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-import { MDXRemote } from "next-mdx-remote";
+
 import React, { ReactNode } from "react";
 import { getAndSerializePost, getPosts, PostData } from "@/lib/get-posts";
 import Tag from "@/components/Tag";
@@ -7,7 +7,7 @@ import Layout from "@/components/layouts";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 
-const ArticlePage = ({ mdxSource, frontMatter }: PostData): ReactNode => {
+const ArticlePage = ({  frontMatter }: PostData): ReactNode => {
   return (
     <Layout title={frontMatter.title} description={frontMatter.description}>
       <h1>{frontMatter.title}</h1>
@@ -28,12 +28,12 @@ const ArticlePage = ({ mdxSource, frontMatter }: PostData): ReactNode => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const { mdxSource, frontMatter } = await getAndSerializePost(
+  const {  frontMatter } = await getAndSerializePost(
     params.slug as string
   );
   return {
     props: {
-      mdxSource,
+     
       frontMatter,
     },
   };
