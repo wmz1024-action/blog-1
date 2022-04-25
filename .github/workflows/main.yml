@@ -32,6 +32,7 @@ jobs:
     - name: 生成
       run: |
         npm run build
+        npm run export
 
 
     - name: Deploy
@@ -40,4 +41,4 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.A }}
         REPOSITORY_NAME: wmz1024-action/blog-1
         BRANCH: pages
-        FOLDER: .next
+        FOLDER: out
